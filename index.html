@@ -1,1 +1,46 @@
-Hello World
+---
+layout: default
+title: Matheus C. Santos Personal Webpage
+---
+
+<div id="home">
+	
+	<div class="hero">
+		<div class="myphotodiv">
+			<img class="myphoto" src="img/eu-free.jpg">
+		</div>
+		<div class="bio">
+			<p>
+			PhD student of Computer Science at the Federal University of Minas Gerais, Brazil. His research interest includes performance evaluation and modeling of large scale distributed systems. He holds Bachelor and Master degree in Computer Science by Unversidade Federal de Minas Gerais. He also interests in social networks, embedded systems and gaming research.
+			</p>
+		</div>
+	</div>
+
+
+	<div class="homeCols">
+		<div class="projectsColumn">
+			<h1>Projects</h1>
+			{% for post in site.categories.project %}
+			<div class="project">
+				<a href="{{ post.link }}">
+					<img style="width:10em" src ={{ post.logo }}>
+				</a>
+			
+				<p> {{ post.subtitle }} 
+				<br>
+				<a href="projects/#{{ post.title }}">More >></a>
+				</p>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="postsColumn">
+			<h1>News</h1>
+			<ul class="posts">
+				{% for post in site.categories.news %}
+				<li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
