@@ -5,6 +5,6 @@ subtitle: "Super fast distributed computing"
 categories: project
 description: "A load distribution framework tailored for small and large clusters."
 link: "http://github.com/mtcs/faster"
-logo: "http://github.com/mtcs/faster/raw/master/res/Logo.png"
+logo: "https://github.com/mtcs/faster/wiki/img/Logo.png"
 ---
 
