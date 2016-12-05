@@ -4,12 +4,13 @@ title:  "RNet"
 subtitle: "Realistic random network generator"
 categories: project
 importance: 2
-description: "RNet is a realistic random network generator. It generates a social network from some statistical parameters. It deliberately assign a community to each node to achieve realistic social behavior.
-
-Also, it is highly flexible, it can accept several parameters. Besides the size of the generated network, it also accepts: outdegree, indegree and community size probability distributions, probability of connecting inside a node community and probability of connecting a node to a totally random node. These parameters make possible to generate a large variety of networks with much smaller restrictions than other generators.
-
-RNet is also very fast, it is possible to generate graphs with millions of vertices in matter of seconds! It uses multithreading to better explore modern CPU power."
 link: "http://github.com/mtcs/rnet"
 logo: "http://github.com/mtcs/rnet/raw/master/res/net2-small.png"
 ---
+
+RNet is a realistic random network generator. It generates a social network from some statistical parameters. It deliberately assign a community to each node to achieve realistic social behavior.
+
+Also, it is highly flexible, it can accept several parameters. Besides the size of the generated network, it also accepts: outdegree, indegree and community size probability distributions, probability of connecting inside a node community and probability of connecting a node to a totally random node. These parameters make possible to generate a large variety of networks with much smaller restrictions than other generators.
+
+RNet is also very fast, it is possible to generate graphs with millions of vertices in matter of seconds! It uses multithreading to better explore modern CPU power.
 

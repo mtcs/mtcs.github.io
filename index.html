@@ -23,14 +23,14 @@ title: Matheus C. Santos Personal Webpage
 			{% assign pages_list = site.categories.project | sort:"importance" %}
 			{% for post in  pages_list %}
 			<div class="project">
-				<a href="{{ post.link }}">
-					<img style="width:10em" src ={{ post.logo }}>
-				</a>
-
-				<p> {{ post.subtitle }}
-				<br>
-				<a href="{{ post.link }}">More >></a>
-				</p>
+				<div style="display:table;width:30em;padding:1em">
+					<div style="display:table-cell;">
+						<a target='_blank' href="{{ post.link }}"><img style="vertical-align:middle;width:15em" src ={{ post.logo }}></a>
+					</div>
+					<div style="display:table-cell;padding-left:2em;">
+						{{ post.subtitle }}
+					</div>
+				</div>
 			</div>
 			{% endfor %}
 		</div>

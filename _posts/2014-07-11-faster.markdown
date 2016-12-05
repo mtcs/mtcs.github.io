@@ -4,8 +4,13 @@ title:  "Faster"
 subtitle: "Super fast distributed computing"
 categories: project
 importance: 1
-description: "A low latency distributed computing framework."
 link: "http://mtcs.github.io/faster"
 logo: "https://github.com/mtcs/faster/wiki/img/Logo.png"
 ---
+A low latency distributed computing framework for processing large scale Data. [Faster] was inspired on Apache [Spark], a state of the art Big Data processing framework. Although, Spark was designed for a specific context where, input data is so large that framework overheads are acceptable. Faster implements most Spark's operators in C++ focusing on low latency and low overhead. Also, Faster implements specialized operators for exploring data locality. With these operators, Faster can achieve a __30x speedup over Spark__ running PageRank on a graph with one billion edges.
+
+Faster is implemented in C++, uses OpenMP for thread paralelism and MPI for process communication and job execution. Therefor it is perfectly compatible fith High Performance Computing clusters, supercomputers and grid engines.
+
+[Faster]:(http://mtcs.github.io/faster)
+[Spark]:(http://spark.apache.org/)
 

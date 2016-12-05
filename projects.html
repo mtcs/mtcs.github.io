@@ -10,12 +10,12 @@ title: Matheus C. Santos Projects
 	{% for post in  pages_list %}
 	<label for="{{ post.title }}"></label>
 	<div class="project">
-		<img style="width:20em" src ={{ post.logo }}>
+		<a href="{{ post.link }}"><img style="width:20em" src ={{ post.logo }}></a>
 
 		<h2>{{ post.subtitle }}</h2>
 
 		<p>
-		{{ post.description }}
+		{{ post.content }}
 		<br>
 		<a href="{{ post.link }}">Go to site >></a>
 		</p>
