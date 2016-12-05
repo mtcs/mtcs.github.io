@@ -3,8 +3,9 @@ layout: project
 title:  "Faster"
 subtitle: "Super fast distributed computing"
 categories: project
-description: "A load distribution framework tailored for small and large clusters."
-link: "http://github.com/mtcs/faster"
+importance: 1
+description: "A low latency distributed computing framework."
+link: "http://mtcs.github.io/faster"
 logo: "https://github.com/mtcs/faster/wiki/img/Logo.png"
 ---
 
