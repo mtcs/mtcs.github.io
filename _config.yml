@@ -1,3 +1,4 @@
 name: Matheus C Santos
 #relative_permalinks: true
 highlighter: rouge
+paginate: 3
