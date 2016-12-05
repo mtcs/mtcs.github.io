@@ -1,0 +1,18 @@
+---
+layout: default
+title: Matheus C. Santos Articles
+---
+
+<div class="normalcontent">
+	{% for post in  site.categories.blog %}
+	<label for="{{ post.title }}"></label>
+	<div class="project">
+		<h1>{{ post.title }}</h2>
+
+		{{ post.content }}
+	</div>
+	</br>
+	{% endfor %}
+
+
+</div>
